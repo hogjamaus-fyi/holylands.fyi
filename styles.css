@@ -72,6 +72,10 @@ button {
   font: inherit;
 }
 
+html[dir="rtl"] body {
+  text-align: right;
+}
+
 .page-shell,
 .action-shell {
   min-height: 100vh;
@@ -125,6 +129,12 @@ button {
 
 .nav-links a {
   opacity: 0.92;
+}
+
+html[dir="rtl"] .top-nav,
+html[dir="rtl"] .nav-links,
+html[dir="rtl"] .shared-actions {
+  direction: rtl;
 }
 
 .nav-pill {
@@ -418,6 +428,56 @@ p {
   text-shadow: 0 12px 28px rgba(7, 33, 75, 0.34);
 }
 
+.language-switcher {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(6, 31, 71, 0.88);
+  box-shadow: 0 16px 40px rgba(6, 27, 66, 0.28);
+  backdrop-filter: blur(14px);
+  z-index: 20;
+}
+
+.language-switcher-label {
+  padding-inline: 6px 2px;
+  color: var(--text-body);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.language-switcher button {
+  min-width: 46px;
+  min-height: 38px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--text-strong);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.language-switcher button:hover,
+.language-switcher button:focus-visible {
+  background: rgba(255, 255, 255, 0.22);
+  outline: none;
+}
+
+.language-switcher button.is-active {
+  background: linear-gradient(135deg, #c7dbff, #ffffff);
+  color: #073679;
+  transform: translateY(-1px);
+}
+
 /* Fade structural boxes when they carry no textual content. */
 .hero-panel:not(:has(p, h1, h2, h3, h4, h5, h6, li, a)),
 .section:not(:has(p, h1, h2, h3, h4, h5, h6, li, a)),
@@ -506,5 +566,22 @@ p {
 
   .shared-actions .nav-pill {
     width: 100%;
+  }
+
+  .language-switcher {
+    right: 14px;
+    bottom: 14px;
+    gap: 6px;
+    padding: 8px;
+  }
+
+  .language-switcher-label {
+    display: none;
+  }
+
+  .language-switcher button {
+    min-width: 42px;
+    min-height: 36px;
+    padding: 0 10px;
   }
 }
