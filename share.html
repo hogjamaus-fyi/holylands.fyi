@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Share HolyLands.fyi</title>
+  <meta name="description" content="Share HolyLands.fyi across major social platforms.">
+  <meta name="keywords" content="HolyLands, share, social, platforms, New Jerusalem">
+  <meta name="author" content="HolyLands.fyi">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#082354">
+  <link rel="canonical" href="https://holylands.fyi/share.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://holylands.fyi/share.html">
+  <meta property="og:site_name" content="HolyLands.fyi">
+  <meta property="og:title" content="Share HolyLands.fyi">
+  <meta property="og:description" content="Quickly share HolyLands.fyi across social platforms.">
+  <meta property="og:image" content="https://holylands.fyi/og-image.png">
+  <meta property="og:image:alt" content="Share HolyLands.fyi">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Share HolyLands.fyi">
+  <meta name="twitter:description" content="Quickly share HolyLands.fyi across social platforms.">
+  <meta name="twitter:image" content="https://holylands.fyi/og-image.png">
+  <meta name="twitter:image:alt" content="Share HolyLands.fyi">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <script id="page-schema" type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Share HolyLands.fyi",
+    "description": "Quickly share HolyLands.fyi across social platforms.",
+    "url": "https://holylands.fyi/share.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "HolyLands.fyi",
+      "url": "https://holylands.fyi/"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260601b">
+</head>
+<body class="share-page" data-page="share">
+  <div class="action-shell">
+    <nav class="top-nav" aria-label="Primary">
+      <a class="brand" href="index.html" data-i18n="brand">New Jerusalem <span>HL</span></a>
+      <div class="nav-links">
+        <a href="index.html#framework" data-i18n="navFramework">Framework</a>
+        <a href="index.html#pillars" data-i18n="navPillars">Dual Pillars</a>
+        <a href="index.html#zones" data-i18n="navZones">Zones</a>
+        <a class="nav-pill nav-pill-primary" href="action-plan.html" data-i18n="navActionPlan">Action Plan</a>
+      </div>
+    </nav>
+
+    <main class="action-main">
+      <section class="hero-panel">
+        <p class="eyebrow" data-i18n="shareEyebrow">Share Network</p>
+        <h1 data-i18n="shareTitle">Share HolyLands.fyi Across Social Platforms</h1>
+        <p class="hero-copy" data-i18n="shareCopy">Choose any icon to open a share flow for the HolyLands.fyi home page.</p>
+      </section>
+
+      <section class="section" aria-labelledby="share-cloud-title">
+        <div class="section-heading">
+          <p class="section-label" data-i18n="shareLabel">Share Cloud</p>
+          <h2 id="share-cloud-title" data-i18n="shareCloudTitle">Popular Platforms</h2>
+        </div>
+        <div class="share-cloud" id="share-cloud" aria-label="Share links"></div>
+      </section>
+
+      <section class="share-cta-row" aria-label="Back">
+        <a class="nav-pill nav-pill-primary share-launch-button" href="index.html" data-i18n="shareBackButton">Back To Home</a>
+      </section>
+    </main>
+  </div>
+
+  <script src="lang.js?v=20260601b"></script>
+  <script>
+    (function renderShareIcons() {
+      const cloud = document.getElementById('share-cloud');
+      if (!cloud) {
+        return;
+      }
+
+      const shareTarget = window.location.origin + '/index.html';
+      const shareText = 'New Jerusalem (HL) - HolyLands.fyi';
+      const encodedUrl = encodeURIComponent(shareTarget);
+      const encodedText = encodeURIComponent(shareText);
+
+      const endpoints = {
+        facebook: 'https://www.facebook.com/sharer/sharer.php?u=' + encodedUrl,
+        x: 'https://twitter.com/intent/tweet?url=' + encodedUrl + '&text=' + encodedText,
+        linkedin: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodedUrl,
+        reddit: 'https://www.reddit.com/submit?url=' + encodedUrl + '&title=' + encodedText,
+        whatsapp: 'https://api.whatsapp.com/send?text=' + encodedText + '%20' + encodedUrl,
+        telegram: 'https://t.me/share/url?url=' + encodedUrl + '&text=' + encodedText,
+        pinterest: 'https://pinterest.com/pin/create/button/?url=' + encodedUrl + '&description=' + encodedText,
+        tumblr: 'https://www.tumblr.com/widgets/share/tool?canonicalUrl=' + encodedUrl + '&title=' + encodedText,
+        vk: 'https://vk.com/share.php?url=' + encodedUrl,
+        ok: 'https://connect.ok.ru/offer?url=' + encodedUrl + '&title=' + encodedText,
+        xing: 'https://www.xing.com/spi/shares/new?url=' + encodedUrl,
+        line: 'https://social-plugins.line.me/lineit/share?url=' + encodedUrl,
+        pocket: 'https://getpocket.com/edit?url=' + encodedUrl + '&title=' + encodedText,
+        hn: 'https://news.ycombinator.com/submitlink?u=' + encodedUrl + '&t=' + encodedText,
+        mastodon: 'https://mastodon.social/share?text=' + encodedText + '%20' + encodedUrl,
+        bluesky: 'https://bsky.app/intent/compose?text=' + encodedText + '%20' + encodedUrl,
+        threads: 'https://www.threads.net/intent/post?text=' + encodedText + '%20' + encodedUrl,
+        weibo: 'https://service.weibo.com/share/share.php?url=' + encodedUrl + '&title=' + encodedText,
+        qq: 'https://connect.qq.com/widget/shareqq/index.html?url=' + encodedUrl + '&title=' + encodedText,
+        qzone: 'https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + encodedUrl + '&title=' + encodedText,
+        douban: 'https://www.douban.com/share/service?href=' + encodedUrl + '&name=' + encodedText,
+        blogger: 'https://www.blogger.com/blog-this.g?u=' + encodedUrl + '&n=' + encodedText,
+        flipboard: 'https://share.flipboard.com/bookmarklet/popout?v=2&url=' + encodedUrl,
+        digg: 'http://digg.com/submit?url=' + encodedUrl,
+        teams: 'https://teams.microsoft.com/share?href=' + encodedUrl + '&msgText=' + encodedText,
+        instapaper: 'https://www.instapaper.com/edit?url=' + encodedUrl + '&title=' + encodedText,
+        slashdot: 'https://slashdot.org/submit.pl?url=' + encodedUrl + '&title=' + encodedText,
+        email: 'mailto:?subject=' + encodedText + '&body=' + encodedText + '%20' + encodedUrl,
+        gmail: 'https://mail.google.com/mail/?view=cm&fs=1&su=' + encodedText + '&body=' + encodedText + '%20' + encodedUrl,
+        outlook: 'https://outlook.live.com/mail/0/deeplink/compose?subject=' + encodedText + '&body=' + encodedText + '%20' + encodedUrl,
+        yahoo: 'https://compose.mail.yahoo.com/?subject=' + encodedText + '&body=' + encodedText + '%20' + encodedUrl,
+        sms: 'sms:?body=' + encodedText + '%20' + encodedUrl,
+        buffer: 'https://buffer.com/add?url=' + encodedUrl + '&text=' + encodedText,
+        plurk: 'https://www.plurk.com/?qualifier=shares&status=' + encodedText + '%20' + encodedUrl,
+        diaspora: 'https://share.diasporafoundation.org/?title=' + encodedText + '&url=' + encodedUrl,
+        kakaostory: 'https://story.kakao.com/share?url=' + encodedUrl,
+        skype: 'https://web.skype.com/share?url=' + encodedUrl,
+        livejournal: 'https://www.livejournal.com/update.bml?subject=' + encodedText + '&event=' + encodedText + '%20' + encodedUrl,
+        pinboard: 'https://pinboard.in/add?url=' + encodedUrl + '&title=' + encodedText
+      };
+
+      const platforms = [
+        { n: 'Facebook', icon: 'facebook', u: endpoints.facebook },
+        { n: 'X', icon: 'x', u: endpoints.x },
+        { n: 'Threads', icon: 'threads', u: endpoints.threads },
+        { n: 'Bluesky', icon: 'bluesky', u: endpoints.bluesky },
+        { n: 'Mastodon', icon: 'mastodon', u: endpoints.mastodon },
+        { n: 'Reddit', icon: 'reddit', u: endpoints.reddit },
+        { n: 'LinkedIn', icon: 'linkedin', u: endpoints.linkedin },
+        { n: 'WhatsApp', icon: 'whatsapp', u: endpoints.whatsapp },
+        { n: 'Telegram', icon: 'telegram', u: endpoints.telegram },
+        { n: 'Line', icon: 'line', u: endpoints.line },
+        { n: 'QQ', icon: 'qq', u: endpoints.qq },
+        { n: 'Qzone', icon: 'qzone', u: endpoints.qzone },
+        { n: 'KakaoStory', icon: 'kakaotalk', u: endpoints.kakaostory },
+        { n: 'Skype', icon: 'skype', u: endpoints.skype },
+        { n: 'Pinterest', icon: 'pinterest', u: endpoints.pinterest },
+        { n: 'Tumblr', icon: 'tumblr', u: endpoints.tumblr },
+        { n: 'Blogger', icon: 'blogger', u: endpoints.blogger },
+        { n: 'Weibo', icon: 'sinaweibo', u: endpoints.weibo },
+        { n: 'VK', icon: 'vk', u: endpoints.vk },
+        { n: 'Odnoklassniki', icon: 'odnoklassniki', u: endpoints.ok },
+        { n: 'Xing', icon: 'xing', u: endpoints.xing },
+        { n: 'Douban', icon: 'douban', u: endpoints.douban },
+        { n: 'Hacker News', icon: 'ycombinator', u: endpoints.hn },
+        { n: 'Slashdot', icon: 'slashdot', u: endpoints.slashdot },
+        { n: 'Digg', icon: 'digg', u: endpoints.digg },
+        { n: 'Flipboard', icon: 'flipboard', u: endpoints.flipboard },
+        { n: 'Pocket', icon: 'pocket', u: endpoints.pocket },
+        { n: 'Instapaper', icon: 'instapaper', u: endpoints.instapaper },
+        { n: 'Pinboard', icon: 'pinboard', u: endpoints.pinboard },
+        { n: 'Buffer', icon: 'buffer', u: endpoints.buffer },
+        { n: 'Plurk', icon: 'plurk', u: endpoints.plurk },
+        { n: 'diaspora*', icon: 'diaspora', u: endpoints.diaspora },
+        { n: 'LiveJournal', icon: 'livejournal', u: endpoints.livejournal },
+        { n: 'Microsoft Teams', icon: 'microsoftteams', u: endpoints.teams },
+        { n: 'Gmail', icon: 'gmail', u: endpoints.gmail },
+        { n: 'Outlook', icon: 'microsoftoutlook', u: endpoints.outlook },
+        { n: 'Yahoo Mail', icon: 'yahoo', u: endpoints.yahoo },
+        { n: 'SMS', icon: 'googlemessages', u: endpoints.sms },
+        { n: 'Email', icon: 'maildotru', u: endpoints.email }
+      ];
+
+      cloud.innerHTML = '';
+
+      platforms.forEach(function (platform) {
+        let fallbackHost = '';
+        try {
+          fallbackHost = new URL(platform.u).hostname;
+        } catch (error) {
+          fallbackHost = 'gmail.com';
+        }
+
+        const link = document.createElement('a');
+        link.className = 'share-icon';
+        link.href = platform.u;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.title = 'Share on ' + platform.n;
+        link.setAttribute('aria-label', 'Share on ' + platform.n);
+
+        const img = document.createElement('img');
+        img.className = 'share-icon-img';
+        img.src = 'https://cdn.simpleicons.org/' + platform.icon;
+        img.alt = platform.n;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.referrerPolicy = 'no-referrer';
+        img.addEventListener('error', function onIconError() {
+          if (img.dataset.fallbackLoaded === '1') {
+            return;
+          }
+          img.dataset.fallbackLoaded = '1';
+          img.src = 'https://www.google.com/s2/favicons?sz=64&domain=' + encodeURIComponent(fallbackHost);
+        });
+
+        link.appendChild(img);
+        cloud.appendChild(link);
+      });
+    })();
+  </script>
+</body>
+</html>

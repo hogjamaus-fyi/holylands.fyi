@@ -63,6 +63,21 @@ body.action-plan-page .top-nav {
   background: rgba(6, 31, 71, 0.44);
 }
 
+body.share-page {
+  background:
+    linear-gradient(180deg, rgba(10, 44, 97, 0.58), rgba(11, 63, 134, 0.5)),
+    url('map.holyland.fyi.svg') center / cover no-repeat fixed;
+  background-attachment: fixed;
+}
+
+body.share-page .action-shell {
+  gap: 22px;
+}
+
+body.share-page .top-nav {
+  background: rgba(6, 31, 71, 0.44);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -485,6 +500,70 @@ p {
   transform: translateY(-1px);
 }
 
+.share-cta-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 4px 2px;
+}
+
+.share-launch-button {
+  min-width: 220px;
+}
+
+.share-cloud {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 12px;
+  align-items: start;
+  border-radius: 26px;
+  border: 1px solid var(--line);
+  background: rgba(7, 35, 78, 0.32);
+  padding: 14px;
+}
+
+.share-cloud-canvas {
+  display: none;
+}
+
+.share-cloud-layer {
+  display: contents;
+}
+
+.share-icon {
+  justify-self: center;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: rgba(5, 30, 71, 0.82);
+  color: #eaf3ff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 12px 24px rgba(5, 22, 52, 0.35);
+  backdrop-filter: blur(8px);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
+}
+
+.share-icon:hover,
+.share-icon:focus-visible {
+  transform: scale(1.14);
+  background: rgba(13, 67, 138, 0.92);
+  border-color: rgba(255, 255, 255, 0.56);
+  outline: none;
+}
+
+.share-icon-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
 /* Fade structural boxes when they carry no textual content. */
 .hero-panel:not(:has(p, h1, h2, h3, h4, h5, h6, li, a)),
 .section:not(:has(p, h1, h2, h3, h4, h5, h6, li, a)),
@@ -573,6 +652,20 @@ p {
 
   .shared-actions .nav-pill {
     width: 100%;
+  }
+
+  .share-launch-button {
+    width: 100%;
+  }
+
+  .share-cloud {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .share-icon:hover,
+  .share-icon:focus-visible {
+    transform: scale(1.12);
   }
 
   .language-switcher {

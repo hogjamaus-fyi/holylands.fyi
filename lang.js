@@ -322,6 +322,171 @@ const translations = {
   }
 };
 
+translations.en.pages.home.text.shareButton = 'Share This Website';
+translations.en.pages.action.text.shareButton = 'Share This Website';
+translations.en.pages.share = {
+  locale: 'en_US',
+  navLabel: 'Primary',
+  title: 'Share HolyLands.fyi',
+  description: 'Quickly share HolyLands.fyi across social platforms.',
+  ogTitle: 'Share HolyLands.fyi',
+  ogDescription: 'Quickly share HolyLands.fyi across social platforms.',
+  ogImageAlt: 'Share HolyLands.fyi',
+  twitterTitle: 'Share HolyLands.fyi',
+  twitterDescription: 'Quickly share HolyLands.fyi across social platforms.',
+  twitterImageAlt: 'Share HolyLands.fyi',
+  schemaDescription: 'Quickly share HolyLands.fyi across social platforms.',
+  text: {
+    brand: 'New Jerusalem <span>HL</span>',
+    navFramework: 'Framework',
+    navPillars: 'Dual Pillars',
+    navZones: 'Zones',
+    navActionPlan: 'Action Plan',
+    shareEyebrow: 'Share Network',
+    shareTitle: 'Share HolyLands.fyi Across Social Platforms',
+    shareCopy: 'Choose any icon to open a share flow for the HolyLands.fyi home page.',
+    shareLabel: 'Share Cloud',
+    shareCloudTitle: 'Popular Platforms',
+    shareBackButton: 'Back To Home'
+  }
+};
+
+translations.en.pages.notFound = {
+  locale: 'en_US',
+  navLabel: 'Primary',
+  title: '404 - Page Not Found | HolyLands.fyi',
+  description: 'The page you requested could not be found on HolyLands.fyi.',
+  ogTitle: '404 - Page Not Found | HolyLands.fyi',
+  ogDescription: 'The page you requested could not be found on HolyLands.fyi.',
+  ogImageAlt: 'HolyLands.fyi 404 page',
+  twitterTitle: '404 - Page Not Found | HolyLands.fyi',
+  twitterDescription: 'The page you requested could not be found on HolyLands.fyi.',
+  twitterImageAlt: 'HolyLands.fyi 404 page',
+  schemaDescription: 'The page you requested could not be found on HolyLands.fyi.',
+  text: {
+    brand: 'New Jerusalem <span>HL</span>',
+    navFramework: 'Framework',
+    navPillars: 'Dual Pillars',
+    navZones: 'Zones',
+    navActionPlan: 'Action Plan',
+    notFoundEyebrow: 'Page Error',
+    notFoundTitle: '404 - Page Not Found',
+    notFoundCopy: 'The page you are looking for may have moved, expired, or never existed.',
+    notFoundHomeButton: 'Go To Home',
+    notFoundActionButton: 'Open Action Plan'
+  }
+};
+
+translations.he.pages.home.text.shareButton = 'שתפו את האתר הזה';
+translations.he.pages.action.text.shareButton = 'שתפו את האתר הזה';
+translations.he.pages.share = {
+  locale: 'he_IL',
+  navLabel: 'ניווט ראשי',
+  title: 'שיתוף HolyLands.fyi',
+  description: 'שתפו במהירות את HolyLands.fyi בפלטפורמות חברתיות.',
+  ogTitle: 'שיתוף HolyLands.fyi',
+  ogDescription: 'שתפו במהירות את HolyLands.fyi בפלטפורמות חברתיות.',
+  ogImageAlt: 'שיתוף HolyLands.fyi',
+  twitterTitle: 'שיתוף HolyLands.fyi',
+  twitterDescription: 'שתפו במהירות את HolyLands.fyi בפלטפורמות חברתיות.',
+  twitterImageAlt: 'שיתוף HolyLands.fyi',
+  schemaDescription: 'שתפו במהירות את HolyLands.fyi בפלטפורמות חברתיות.',
+  text: {
+    brand: 'ירושלים החדשה <span>HL</span>',
+    navFramework: 'המסגרת',
+    navPillars: 'שני עמודי התווך',
+    navZones: 'אזורים',
+    navActionPlan: 'תוכנית פעולה',
+    shareEyebrow: 'רשת שיתוף',
+    shareTitle: 'שתפו את HolyLands.fyi ברשתות חברתיות',
+    shareCopy: 'בחרו כל אייקון כדי לפתוח שיתוף לעמוד הבית של HolyLands.fyi.',
+    shareLabel: 'ענן שיתוף',
+    shareCloudTitle: 'פלטפורמות פופולריות',
+    shareBackButton: 'חזרה לדף הבית'
+  }
+};
+
+translations.he.pages.notFound = {
+  locale: 'he_IL',
+  navLabel: 'ניווט ראשי',
+  title: '404 - העמוד לא נמצא | HolyLands.fyi',
+  description: 'העמוד שביקשתם לא נמצא ב-Holylands.fyi.',
+  ogTitle: '404 - העמוד לא נמצא | HolyLands.fyi',
+  ogDescription: 'העמוד שביקשתם לא נמצא ב-Holylands.fyi.',
+  ogImageAlt: 'עמוד 404 של HolyLands.fyi',
+  twitterTitle: '404 - העמוד לא נמצא | HolyLands.fyi',
+  twitterDescription: 'העמוד שביקשתם לא נמצא ב-Holylands.fyi.',
+  twitterImageAlt: 'עמוד 404 של HolyLands.fyi',
+  schemaDescription: 'העמוד שביקשתם לא נמצא ב-Holylands.fyi.',
+  text: {
+    brand: 'ירושלים החדשה <span>HL</span>',
+    navFramework: 'המסגרת',
+    navPillars: 'שני עמודי התווך',
+    navZones: 'אזורים',
+    navActionPlan: 'תוכנית פעולה',
+    notFoundEyebrow: 'שגיאת עמוד',
+    notFoundTitle: '404 - העמוד לא נמצא',
+    notFoundCopy: 'ייתכן שהעמוד שחיפשתם הועבר, הוסר או שלא היה קיים מלכתחילה.',
+    notFoundHomeButton: 'מעבר לדף הבית',
+    notFoundActionButton: 'פתיחת תוכנית הפעולה'
+  }
+};
+
+translations.ar.pages.home.text.shareButton = 'شارك هذا الموقع';
+translations.ar.pages.action.text.shareButton = 'شارك هذا الموقع';
+translations.ar.pages.share = {
+  locale: 'ar',
+  navLabel: 'التنقل الرئيسي',
+  title: 'مشاركة HolyLands.fyi',
+  description: 'شارك HolyLands.fyi بسرعة عبر المنصات الاجتماعية.',
+  ogTitle: 'مشاركة HolyLands.fyi',
+  ogDescription: 'شارك HolyLands.fyi بسرعة عبر المنصات الاجتماعية.',
+  ogImageAlt: 'مشاركة HolyLands.fyi',
+  twitterTitle: 'مشاركة HolyLands.fyi',
+  twitterDescription: 'شارك HolyLands.fyi بسرعة عبر المنصات الاجتماعية.',
+  twitterImageAlt: 'مشاركة HolyLands.fyi',
+  schemaDescription: 'شارك HolyLands.fyi بسرعة عبر المنصات الاجتماعية.',
+  text: {
+    brand: 'أورشليم الجديدة <span>HL</span>',
+    navFramework: 'الإطار',
+    navPillars: 'الركيزتان',
+    navZones: 'المناطق',
+    navActionPlan: 'خطة العمل',
+    shareEyebrow: 'شبكة المشاركة',
+    shareTitle: 'شارك HolyLands.fyi عبر المنصات الاجتماعية',
+    shareCopy: 'اختر أيقونة لفتح مشاركة للصفحة الرئيسية في HolyLands.fyi.',
+    shareLabel: 'سحابة المشاركة',
+    shareCloudTitle: 'منصات شائعة',
+    shareBackButton: 'العودة إلى الصفحة الرئيسية'
+  }
+};
+
+translations.ar.pages.notFound = {
+  locale: 'ar',
+  navLabel: 'التنقل الرئيسي',
+  title: '404 - الصفحة غير موجودة | HolyLands.fyi',
+  description: 'الصفحة التي طلبتها غير موجودة على HolyLands.fyi.',
+  ogTitle: '404 - الصفحة غير موجودة | HolyLands.fyi',
+  ogDescription: 'الصفحة التي طلبتها غير موجودة على HolyLands.fyi.',
+  ogImageAlt: 'صفحة 404 في HolyLands.fyi',
+  twitterTitle: '404 - الصفحة غير موجودة | HolyLands.fyi',
+  twitterDescription: 'الصفحة التي طلبتها غير موجودة على HolyLands.fyi.',
+  twitterImageAlt: 'صفحة 404 في HolyLands.fyi',
+  schemaDescription: 'الصفحة التي طلبتها غير موجودة على HolyLands.fyi.',
+  text: {
+    brand: 'أورشليم الجديدة <span>HL</span>',
+    navFramework: 'الإطار',
+    navPillars: 'الركيزتان',
+    navZones: 'المناطق',
+    navActionPlan: 'خطة العمل',
+    notFoundEyebrow: 'خطأ في الصفحة',
+    notFoundTitle: '404 - الصفحة غير موجودة',
+    notFoundCopy: 'قد تكون الصفحة التي تبحث عنها قد نُقلت أو حُذفت أو لم تكن موجودة من الأساس.',
+    notFoundHomeButton: 'الذهاب إلى الصفحة الرئيسية',
+    notFoundActionButton: 'فتح خطة العمل'
+  }
+};
+
 function updateMeta(selector, content) {
   const element = document.querySelector(selector);
   if (element && content) {
