@@ -1,0 +1,13 @@
+{
+  "name": "New Jerusalem – HolyLands.fyi",
+  "short_name": "HolyLands",
+  "description": "A reconciliation framework centered on divine miracles, recovery, and practical abundance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#082354",
+  "theme_color": "#082354",
+  "icons": [
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
